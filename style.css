@@ -15,7 +15,7 @@ a:hover { color: var(--cyl-orange-hover); }
 /* ---- Nav ---- */
 .navbar { border-bottom: 3px solid var(--cyl-orange); }
 .navbar-brand { color: var(--cyl-orange) !important; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 16px; }
-.navbar-brand img { height: 40px; margin-right: 10px; border-radius: 50%; background: #fff; padding: 2px; }
+.navbar-brand img { height: 40px; width: 40px; object-fit: cover; margin-right: 10px; border-radius: 50%; background: #fff; padding: 2px; }
 .nav-link { color: #fff !important; font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 0.5px; }
 .nav-link:hover, .nav-link.active { color: var(--cyl-orange) !important; }
 .btn-register { background: var(--cyl-orange) !important; color: #fff !important; border-radius: 4px; padding: 8px 20px !important; font-size: 13px !important; }
