@@ -4,62 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Croton Youth Lacrosse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="logo">Croton Youth Lacrosse</a>
-    <button class="mobile-toggle" aria-label="Menu">&#9776;</button>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="spring.html">Spring Program</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="equipment.html">Equipment</a>
-      <a href="https://go.teamsnap.com/forms/514873" target="_blank" class="nav-register">Register</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/cyl-logo.png" alt="Logo">
+      Croton Youth Lacrosse
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="spring.html">Spring Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipment.html">Equipment</a></li>
+        <li class="nav-item ms-lg-2"><a class="nav-link btn-register" href="https://go.teamsnap.com/forms/514873" target="_blank">Register</a></li>
+      </ul>
     </div>
   </div>
 </nav>
 
-<header class="hero">
-  <img src="images/cyl-logo.png" alt="Croton Lacrosse logo" class="hero-logo">
-  <h1>Spring 2026 Lacrosse</h1>
-  <p class="hero-sub">K through 2nd Grade</p>
-  <p class="hero-tagline">Fun, low-pressure lacrosse instruction at Croton Landing Park. No experience needed!</p>
-  <p class="hero-steps">A USA Lacrosse yearly membership is required for insurance coverage. It also includes access to youth development resources and supports the sport nationally. If your child already has one from the fall, just register below.</p>
-  <div class="hero-buttons">
-    <a href="https://www.usalacrosse.com/membership" target="_blank" class="btn btn-outline">USA Lacrosse Membership ($35)</a>
-    <a href="https://go.teamsnap.com/forms/514873" target="_blank" class="btn btn-primary">Register on TeamSnap ($75)</a>
+<header class="hero text-white text-center">
+  <div class="container">
+    <img src="images/cyl-logo.png" alt="Croton Lacrosse" class="hero-logo mb-4">
+    <h1 class="display-4 fw-bold text-uppercase mb-1" style="letter-spacing:2px;">Spring 2026 Lacrosse</h1>
+    <p class="fs-4 fw-light mb-1 opacity-75">K through 2nd Grade</p>
+    <p class="fs-6 mb-3 opacity-75">Fun, low-pressure lacrosse instruction at Croton Landing Park. No experience needed!</p>
+    <p class="hero-steps mb-4">A USA Lacrosse yearly membership is required for insurance coverage. It also includes access to youth development resources and supports the sport nationally. If your child already has one from the fall, just register below.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="https://www.usalacrosse.com/membership" target="_blank" class="btn btn-cyl-outline btn-lg">USA Lacrosse Membership ($35)</a>
+      <a href="https://go.teamsnap.com/forms/514873" target="_blank" class="btn btn-cyl btn-lg">Register on TeamSnap ($75)</a>
+    </div>
   </div>
 </header>
 
-<main class="content">
-  <section class="summary-box">
-    <div class="summary-item"><strong>Who:</strong> K&ndash;2 (boys and girls)</div>
-    <div class="summary-item"><strong>When:</strong> Mondays &amp; Fridays at 4:30 PM</div>
-    <div class="summary-item"><strong>Where:</strong> Croton Landing Park</div>
-    <div class="summary-item"><strong>Season:</strong> April 6 &ndash; June 12</div>
-    <div class="summary-item"><strong>Cost:</strong> $75</div>
-  </section>
+<main class="bg-white content-wrap">
+  <div class="row g-0 p-4" style="border-left: 5px solid var(--cyl-orange); background: #f9f9f9;">
+    <div class="col-6 col-md-4 p-2">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-people-fill summary-icon"></i>
+        <div><strong>Who</strong><br><span class="text-muted">K&ndash;2 (boys and girls)</span></div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 p-2">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-clock-fill summary-icon"></i>
+        <div><strong>When</strong><br><span class="text-muted">Mon &amp; Fri at 4:30 PM</span></div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 p-2">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-geo-alt-fill summary-icon"></i>
+        <div><strong>Where</strong><br><span class="text-muted">Croton Landing Park</span></div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 p-2">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-calendar-event-fill summary-icon"></i>
+        <div><strong>Season</strong><br><span class="text-muted">April 6 &ndash; June 12</span></div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 p-2">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-currency-dollar summary-icon"></i>
+        <div><strong>Cost</strong><br><span class="text-muted">$75 program fee</span></div>
+      </div>
+    </div>
+  </div>
 
-  <section class="text-section">
+  <section class="p-4 p-md-5">
     <h2>Welcome to Croton Youth Lacrosse</h2>
     <p>Our intramural program introduces young players to the sport of lacrosse in a supportive, fun environment. This is not a travel league&mdash;all practices and games are local at Croton Landing Park. Coaches focus on fundamentals&mdash;stick skills, teamwork, and sportsmanship&mdash;so every child can learn at their own pace. No prior experience is necessary.</p>
   </section>
 
-  <section class="cta-bar">
-    <a href="https://www.usalacrosse.com/membership" target="_blank" class="btn btn-outline-dark">USA Lacrosse Yearly Membership ($35)</a>
-    <a href="https://go.teamsnap.com/forms/514873" target="_blank" class="btn btn-primary">Register on TeamSnap ($75)</a>
+  <section class="px-4 px-md-5 pb-4">
+    <h2>Two Ways to Play</h2>
+    <div class="row g-3 mt-2">
+      <div class="col-md-6">
+        <div class="card info-card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5"><i class="bi bi-shield-check me-2"></i>Sticks &amp; Skills</h3>
+            <span class="badge bg-secondary mb-2">Non-contact &bull; Girls&rsquo; rules</span>
+            <p class="card-text">Focus on stick skills, passing, catching, and game sense.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card info-card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5"><i class="bi bi-shield-fill-check me-2"></i>Full Gear</h3>
+            <span class="badge bg-secondary mb-2">Contact &bull; Boys&rsquo; rules &bull; No body checking</span>
+            <p class="card-text">Stick checking only with full protective equipment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-4 px-md-5 pb-4">
+    <img src="images/team-photo.jpg" alt="Croton Youth Lacrosse team" class="img-fluid rounded shadow-sm">
+  </section>
+
+  <section class="text-center p-4 p-md-5">
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="https://www.usalacrosse.com/membership" target="_blank" class="btn btn-cyl-outline-dark btn-lg">USA Lacrosse Membership ($35)</a>
+      <a href="https://go.teamsnap.com/forms/514873" target="_blank" class="btn btn-cyl btn-lg">Register on TeamSnap ($75)</a>
+    </div>
   </section>
 </main>
 
-<footer class="footer">
-  <p>&copy; 2026 Croton Youth Lacrosse</p>
-  <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+<footer class="footer bg-dark text-center py-4 content-wrap">
+  <div class="container">
+    <img src="images/cyl-logo.png" alt="Logo" class="footer-logo mb-3">
+    <div class="d-flex justify-content-center gap-3 mb-3">
+      <a href="index.html" class="small">Home</a>
+      <a href="about.html" class="small">About</a>
+      <a href="spring.html" class="small">Spring Program</a>
+      <a href="schedule.html" class="small">Schedule</a>
+      <a href="equipment.html" class="small">Equipment</a>
+    </div>
+    <p class="text-muted small mb-1">&copy; 2026 Croton Youth Lacrosse</p>
+    <a href="https://www.facebook.com" target="_blank" class="text-muted small"><i class="bi bi-facebook me-1"></i>Facebook</a>
+  </div>
 </footer>
 
-<script src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
