@@ -114,6 +114,11 @@ a:hover { color: #d45a10; }
   margin-bottom: 32px;
   opacity: 0.9;
 }
+.hero-steps {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
 .hero-buttons {
   display: flex;
   gap: 16px;
